@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+</head>
+<body>
+<h1>Checkout</h1>
+<form th:action="@{/payment}" method="post">
+  <label for="cardNumber">Credit Card Number:</label>
+  <input type="text" id="cardNumber" name="cardNumber"><br>
+
+  <label for="expDate">Expiration Date:</label>
+  <input type="text" id="expDate" name="expDate"><br>
+
+  <label for="cvv">CVV:</label>
+  <input type="text" id="cvv" name="cvv"><br>
+
+  <button type="submit">Proceed to Pay</button>
+</form>
+</body>
+</html>
